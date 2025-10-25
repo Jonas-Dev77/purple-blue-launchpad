@@ -1,13 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Hero from "@/components/Hero";
+import ProblemSection from "@/components/ProblemSection";
+import SolutionsSection from "@/components/SolutionsSection";
+import ResultsSection from "@/components/ResultsSection";
+import TimelineSection from "@/components/TimelineSection";
+import FAQSection from "@/components/FAQSection";
+import ContactSection from "@/components/ContactSection";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <Hero />
+      <ProblemSection />
+      <SolutionsSection />
+      <ResultsSection />
+      <TimelineSection />
+      <FAQSection />
+      <ContactSection />
+      <WhatsAppButton />
+
+      {/* Footer */}
+      <footer className="py-8 px-4 border-t border-border/50">
+        <div className="container mx-auto text-center">
+          <p className="text-sm text-muted-foreground">
+            ⚙️ <span className="font-semibold gradient-text">IA-TECH</span> | Automatizando o
+            presente, construindo o futuro.
+          </p>
+          <p className="text-xs text-muted-foreground mt-2">
+            © 2025 IA-TECH Soluções. Todos os direitos reservados.
+          </p>
+        </div>
+      </footer>
+    </main>
   );
 };
 
