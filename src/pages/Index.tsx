@@ -5,7 +5,7 @@ import ResultsSection from "@/components/ResultsSection";
 import TimelineSection from "@/components/TimelineSection";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import ChatAssistant from "@/components/ChatAssistant";
 
 const Index = () => {
   return (
@@ -17,7 +17,7 @@ const Index = () => {
       <TimelineSection />
       <FAQSection />
       <ContactSection />
-      <WhatsAppButton />
+      <ChatAssistant />
 
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border/50">
