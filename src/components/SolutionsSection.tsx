@@ -54,7 +54,7 @@ const SolutionsSection = () => {
             <span className="text-sm font-medium text-primary">A Solução</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Como a <span className="gradient-text">IA-TECH</span> Transforma Seu Negócio
+            Como a <span className="gradient-text">AI-tech</span> Transforma Seu Negócio
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Soluções completas de automação para cada necessidade da sua empresa

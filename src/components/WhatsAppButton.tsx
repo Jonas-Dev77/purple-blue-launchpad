@@ -14,7 +14,7 @@ const WhatsAppButton = () => {
       <div className="relative">
         {/* Tooltip */}
         <div className="absolute right-20 bottom-3 bg-card text-card-foreground px-4 py-3 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:right-24 transition-all duration-300 whitespace-nowrap">
-          <span className="text-sm font-medium">Fale com a IA-TECH</span>
+          <span className="text-sm font-medium">Fale com a AI-tech</span>
           <div className="absolute right-[-8px] top-1/2 -translate-y-1/2 w-0 h-0 border-l-8 border-l-card border-t-8 border-t-transparent border-b-8 border-b-transparent"></div>
         </div>
 

@@ -20,7 +20,7 @@ const ContactSection = () => {
           <Card className="gradient-card p-8 md:p-12 border-border/50 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
               <MessageCircle className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Fale com a IA-TECH</span>
+              <span className="text-sm font-medium text-primary">Fale com a AI-tech</span>
             </div>
 
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -34,7 +34,7 @@ const ContactSection = () => {
             <Button
               size="lg"
               onClick={() => window.open(whatsappUrl, "_blank")}
-              className="group bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-semibold px-8 py-6 text-lg rounded-full glow mb-8"
+              className="group w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-semibold px-6 sm:px-8 py-6 text-base sm:text-lg rounded-full glow mb-8"
             >
               📱 Agendar Agora Meu Diagnóstico
               <MessageCircle className="ml-2 w-5 h-5 group-hover:animate-pulse" />
@@ -48,7 +48,7 @@ const ContactSection = () => {
                 </div>
                 <div className="text-left">
                   <h3 className="font-bold text-lg">Jonas Dorneles</h3>
-                  <p className="text-sm text-muted-foreground">Founder & CEO - IA-TECH Soluções</p>
+                  <p className="text-sm text-muted-foreground">Founder & CEO - AI-tech Soluções</p>
                 </div>
               </div>
 
@@ -126,7 +126,7 @@ const ContactSection = () => {
             <blockquote className="text-center">
               <p className="text-lg md:text-xl text-muted-foreground italic leading-relaxed mb-4">
                 "Transformar complexidade em simplicidade, processos manuais em automações inteligentes, e
-                ideias em resultados concretos. Na IA-TECH, não vendemos tecnologia - entregamos tempo,
+                ideias em resultados concretos. Na AI-tech, não vendemos tecnologia - entregamos tempo,
                 eficiência e crescimento sustentável."
               </p>
               <footer className="text-sm font-semibold gradient-text">— Jonas Dorneles, Founder</footer>

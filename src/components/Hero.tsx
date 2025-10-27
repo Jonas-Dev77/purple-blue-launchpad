@@ -24,7 +24,7 @@ const Hero = () => {
 
           {/* Logo/Title */}
           <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
-            <span className="gradient-text">IA-TECH</span>
+            <span className="gradient-text">AI-tech</span>
           </h1>
 
           {/* Main headline */}
@@ -48,11 +48,11 @@ const Hero = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full px-4">
             <Button
               size="lg"
               onClick={scrollToContact}
-              className="group bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-semibold px-8 py-6 text-lg rounded-full glow transition-all duration-300"
+              className="group w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-semibold px-6 sm:px-8 py-6 text-base sm:text-lg rounded-full glow transition-all duration-300"
             >
               📱 Agendar Diagnóstico Gratuito
               <Zap className="ml-2 w-5 h-5 group-hover:animate-pulse" />

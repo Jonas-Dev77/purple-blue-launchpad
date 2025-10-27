@@ -16,7 +16,7 @@ const ChatAssistant = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Olá! 👋 Sou a assistente virtual da IA-TECH. Como posso ajudar você a transformar seu negócio com automação?",
+      content: "Olá! 👋 Sou a assistente virtual da AI-tech. Como posso ajudar você a transformar seu negócio com automação?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -88,7 +88,7 @@ const ChatAssistant = () => {
                 <MessageCircle className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h3 className="font-semibold text-sm">Assistente IA-TECH</h3>
+                <h3 className="font-semibold text-sm">Assistente AI-tech</h3>
                 <p className="text-xs text-muted-foreground">Online • Sempre disponível</p>
               </div>
             </div>
@@ -168,7 +168,7 @@ const ChatAssistant = () => {
           {/* Tooltip */}
           {!isOpen && (
             <div className="absolute right-20 bottom-3 bg-card text-card-foreground px-4 py-3 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:right-24 transition-all duration-300 whitespace-nowrap">
-              <span className="text-sm font-medium">Fale com a Assistente IA-TECH</span>
+              <span className="text-sm font-medium">Fale com a Assistente AI-tech</span>
               <div className="absolute right-[-8px] top-1/2 -translate-y-1/2 w-0 h-0 border-l-8 border-l-card border-t-8 border-t-transparent border-b-8 border-b-transparent"></div>
             </div>
           )}

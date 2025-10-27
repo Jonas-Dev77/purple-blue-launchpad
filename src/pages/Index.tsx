@@ -23,11 +23,11 @@ const Index = () => {
       <footer className="py-8 px-4 border-t border-border/50">
         <div className="container mx-auto text-center">
           <p className="text-sm text-muted-foreground">
-            ⚙️ <span className="font-semibold gradient-text">IA-TECH</span> | Automatizando o
+            ⚙️ <span className="font-semibold gradient-text">AI-tech</span> | Automatizando o
             presente, construindo o futuro.
           </p>
           <p className="text-xs text-muted-foreground mt-2">
-            © 2025 IA-TECH Soluções. Todos os direitos reservados.
+            © 2025 AI-tech Soluções. Todos os direitos reservados.
           </p>
         </div>
       </footer>

@@ -18,7 +18,7 @@ serve(async (req) => {
       throw new Error("LOVABLE_API_KEY is not configured");
     }
 
-    const systemPrompt = `Você é a assistente virtual da IA-TECH, empresa especializada em automação de processos com inteligência artificial.
+    const systemPrompt = `Você é a assistente virtual da AI-tech, empresa especializada em automação de processos com inteligência artificial.
 
 INFORMAÇÕES DA EMPRESA:
 
@@ -87,7 +87,7 @@ INSTRUÇÕES:
 - Use linguagem clara e acessível
 - Destaque benefícios concretos e mensuráveis
 - Se o cliente demonstrar interesse, incentive agendar o diagnóstico gratuito
-- Responda apenas sobre os serviços da IA-TECH
+- Responda apenas sobre os serviços da AI-tech
 - Se não souber algo específico, seja honesta e ofereça contato direto
 - Use emojis ocasionalmente para tornar a conversa mais amigável`;
 
