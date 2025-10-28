@@ -52,10 +52,10 @@ const Hero = () => {
             <Button
               size="lg"
               onClick={scrollToContact}
-              className="group w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-semibold px-6 sm:px-8 py-6 text-base sm:text-lg rounded-full glow transition-all duration-300"
+              className="group w-full sm:w-auto max-w-[90%] sm:max-w-none bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-semibold px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-lg rounded-full glow transition-all duration-300"
             >
               📱 Agendar Diagnóstico Gratuito
-              <Zap className="ml-2 w-5 h-5 group-hover:animate-pulse" />
+              <Zap className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-pulse" />
             </Button>
           </div>
 
