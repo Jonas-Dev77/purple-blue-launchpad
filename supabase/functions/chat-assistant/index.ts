@@ -80,7 +80,9 @@ PERGUNTAS FREQUENTES:
 - ROI: Métricas claras e dashboards em tempo real
 
 CONTATO:
-WhatsApp: +55 51 99982-4777
+WhatsApp: +55 51 99845-9378
+E-mail: aitech@ai-tech.cloud
+Instagram: @aitech_automacoes
 
 INSTRUÇÕES:
 - Seja prestativa, profissional e objetiva
