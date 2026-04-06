@@ -25,12 +25,13 @@ serve(async (req) => {
       throw new Error("GPTMAKER_API_TOKEN não está configurado");
     }
 
-    const agentUrl = "https://app.gptmaker.ai/api/v2/chatbot/chat";
+    const agentId = "3EFEDD17ED35F09555D29A7668B3134D";
+    const agentUrl = `https://api.gptmaker.ai/v2/agent/${agentId}/conversation`;
 
     const response = await fetch(agentUrl, {
       method: "POST",
       headers: {
-        "Authorization": GPTMAKER_API_TOKEN,
+        "Authorization": `Bearer ${GPTMAKER_API_TOKEN}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -49,8 +50,7 @@ serve(async (req) => {
     }
 
     const data = await response.json();
-    // GPTMaker returns the reply in data.response or data.message
-    const reply = data?.response || data?.message || data?.reply || JSON.stringify(data);
+    const reply = data?.message || data?.response || data?.reply || JSON.stringify(data);
 
     return new Response(
       JSON.stringify({ reply }),
