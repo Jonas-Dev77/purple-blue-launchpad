@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Linkedin, Github, MessageCircle, Shield, Zap, Target } from "lucide-react";
+import { Mail, Linkedin, Github, MessageCircle, Shield, Zap, Target, Instagram } from "lucide-react";
 
 const ContactSection = () => {
-  const phoneNumber = "5551999824777";
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+  const whatsappNumber = "5551998459378";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     "Olá! Gostaria de agendar meu diagnóstico gratuito de automação."
   )}`;
 
@@ -34,11 +34,24 @@ const ContactSection = () => {
             <Button
               size="lg"
               onClick={() => window.open(whatsappUrl, "_blank")}
-              className="group w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white font-semibold px-6 sm:px-8 py-6 text-base sm:text-lg rounded-full glow mb-8"
+              className="group w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-primary-foreground font-semibold px-5 sm:px-8 py-5 sm:py-6 text-sm sm:text-lg rounded-full glow mb-8 max-w-xs sm:max-w-none mx-auto"
             >
               📱 Agendar Agora Meu Diagnóstico
               <MessageCircle className="ml-2 w-5 h-5 group-hover:animate-pulse" />
             </Button>
+
+            {/* Formulário de Contato */}
+            <div className="mt-8 mb-8">
+              <h3 className="text-lg font-semibold mb-4">📋 Preencha o formulário abaixo:</h3>
+              <div className="w-full rounded-xl overflow-hidden border border-border/50">
+                <iframe
+                  src="https://n8n.ai-tech.cloud/form/dc57bf0b-4554-419c-b999-e3341db2d30c"
+                  style={{ border: 0, width: "100%", height: "600px" }}
+                  allowFullScreen
+                  title="Formulário de contato AI-tech"
+                />
+              </div>
+            </div>
 
             {/* Contact Info */}
             <div className="mt-12 pt-8 border-t border-border/50">
@@ -60,15 +73,15 @@ const ContactSection = () => {
                   className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
                 >
                   <MessageCircle className="w-4 h-4 text-[#25D366]" />
-                  <span>(51) 99982-4777</span>
+                  <span>(51) 99845-9378</span>
                 </a>
 
                 <a
-                  href="mailto:dorneles.jonas@gmail.com"
+                  href="mailto:aitech@ai-tech.cloud"
                   className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
                 >
                   <Mail className="w-4 h-4 text-primary" />
-                  <span>dorneles.jonas@gmail.com</span>
+                  <span>aitech@ai-tech.cloud</span>
                 </a>
 
                 <a
@@ -82,13 +95,13 @@ const ContactSection = () => {
                 </a>
 
                 <a
-                  href="https://github.com/Jonas-Dev77"
+                  href="https://instagram.com/aitech_automacoes"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
                 >
-                  <Github className="w-4 h-4 text-primary" />
-                  <span>Jonas-Dev77</span>
+                  <Instagram className="w-4 h-4 text-[#E4405F]" />
+                  <span>@aitech_automacoes</span>
                 </a>
               </div>
             </div>

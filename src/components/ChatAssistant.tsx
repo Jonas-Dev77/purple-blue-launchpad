@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useToast } from "@/components/ui/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import ReactMarkdown from "react-markdown";
 
 interface Message {
   role: "user" | "assistant";
@@ -21,6 +22,7 @@ const ChatAssistant = () => {
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [contextId] = useState(() => crypto.randomUUID());
   const scrollRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
 
@@ -39,9 +41,10 @@ const ChatAssistant = () => {
     setIsLoading(true);
 
     try {
-      const { data, error } = await supabase.functions.invoke("chat-assistant", {
+      const { data, error } = await supabase.functions.invoke("gptmaker-chat", {
         body: {
-          messages: [...messages, { role: "user", content: userMessage }],
+          prompt: userMessage,
+          contextId,
         },
       });
 
@@ -49,11 +52,7 @@ const ChatAssistant = () => {
         throw error;
       }
 
-      if (data?.error) {
-        throw new Error(data.error);
-      }
-
-      const assistantMessage = data.choices[0].message.content;
+      const assistantMessage = data?.reply || data?.choices?.[0]?.message?.content || "Desculpe, não consegui processar sua mensagem.";
       setMessages((prev) => [...prev, { role: "assistant", content: assistantMessage }]);
     } catch (error) {
       console.error("Error sending message:", error);
@@ -117,7 +116,9 @@ const ChatAssistant = () => {
                         : "bg-muted text-foreground"
                     }`}
                   >
-                    <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</p>
+                    <div className="text-sm leading-relaxed prose prose-sm dark:prose-invert max-w-none">
+                      <ReactMarkdown>{message.content}</ReactMarkdown>
+                    </div>
                   </div>
                 </div>
               ))}
